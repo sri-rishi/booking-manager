@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS booking_db;
+
+USE booking_db;
+
+CREATE TABLE bookings(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    date DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
